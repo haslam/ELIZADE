@@ -58,9 +58,8 @@
                   <div class="box-style-1 shade-back">
                     <h4>Sustainable Workforce</h4>
                     <p> We're taking steps to reduce the impact on the environment of our offices, workshops and operations.</p>
-                       <input type="button" class="btn btn-primary btn-sm btn-navy" value="Learn how" id="Button1" />
-
-                  </div>
+                       <a class="btn btn-primary btn-sm btn-navy" id="a1" href="/p.aspx?p=our-history">Learn How</a>
+                </div>
                 </div>
                 <div class="col-xs-4 col-sm-4 close-pads">
                   <div class="box-style-1 shade-back">

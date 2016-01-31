@@ -160,13 +160,13 @@
                             <!-- Tab3 starts -->
 
                                    <div class="modal fade" id="specModalLabel" tabindex="-1" role="dialog" aria-labelledby="specModalLabel" aria-hidden="true">
-				                    <div class="modal-dialog">
+				                    <div class="modal-dialog modal-lg">
 				                      <div class="modal-content">
 					                    <div class="modal-header modheader">
 					                  
 					                      <h5 class="modal-title" id="H1">Model Spec</h5>
 					                    </div>
-					                    <div class="modal-body modbody">
+					                    <div class="report-pre modal-body modbody report-modal-body">
 					
                                              <div class="row">
                                                     <div class="col-xs-12 col-sm-12 text-left">

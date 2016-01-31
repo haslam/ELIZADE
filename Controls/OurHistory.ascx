@@ -51,8 +51,8 @@
 
     
               <div class="span10">
-                 <p><img src="images/Toyota/Elizade-office.png" class="pull-left" style="width: 40%; margin: 0 2% 2% 2%;">ELIZADE is the brainchild of Chief Michael Ade. Ojo and his late wife, Mrs. Wuraola Ade Ojo which evolved from a VISION, apparently made manifest through divine favours; but which Chief Ade Ojo readily accepted as a MISSION.</p>
-                <p>With Head Office at its magnificent Elizade Plaza, 322A, Ikorodu Road Lagos, the company today as a result of strategic and purposeful planning has well established branches in key market centers like Port Harcourt, Akure and the Federal Capital Territory, Abuja. These, in addition to satellite locations in Asaba and the state of the art workshop in Ogba-Lagos are positioned to satisfactorily meet customers' needs in the delivery of first class service and customer satisfaction in Nigeria. Its quality service procedures and delivery have earned the company the trust and respect of its many customers.</p>
+                 <p><img src="images/Toyota/Elizade-office.png" class="pull-left" style="width: 40%; margin: 0 2% 2% 2%;">ELIZADE is the brainchild of Chief Michael Ade. Ojo and his late wife, Mrs. Elizabeth Wuraola Ade Ojo which evolved from a VISION, apparently made manifest through divine favours; but which Chief Ade Ojo readily accepted as a MISSION.</p>
+                <p>With Head Office at its magnificent Elizade Plaza, 322A, Ikorodu Road Lagos, the company today as a result of strategic and purposeful planning has well established branches in the following locations: Ibadan, Port Harcourt, Federal Capital Territory, Abuja, Akure, Uyo, Asaba and Umuahia. These, in addition to satellite locations in Asaba and the State-of-the-art workshop in Ogba-Lagos are positioned to satisfactorily meet customers' needs in the delivery of first class service and customer satisfaction in Nigeria. Its quality service procedures and delivery have earned the company the trust and respect of its many customers.</p>
                 <p>
 The company's main operations are in the following areas:</p>
 
@@ -67,7 +67,7 @@ The company's main operations are in the following areas:</p>
                   <li><a href="#vtab2" role="tab" data-toggle="tab"><i class="fa fa-life-saver pr-10"></i> AFTER SALES</a></li>
                   <li><a href="#vtab3" role="tab" data-toggle="tab"><i class="fa fa-expand pr-10"></i> TECHNOLOGY</a></li>
                   <li><a href="#vtab4" role="tab" data-toggle="tab"><i class="fa fa-file-o pr-10"></i> SHOWROOM/DEPOTS</a></li>
-                  <li><a href="#vtab5" role="tab" data-toggle="tab"><i class="fa fa-file-o pr-10"></i> OUR CUSTOMERS</a></li>
+                  <li><a href="#vtab5" role="tab" data-toggle="tab"><i class="fa fa-file-o pr-10"></i> CUSTOMER SERVICES</a></li>
                 </ul>
                 <!-- Tab panes -->
                 <div class="tab-content">
@@ -79,7 +79,7 @@ The company's main operations are in the following areas:</p>
                   <div class="tab-pane fade" id="vtab2">
                     <h3 class="text-center title">AFTER SALES</h3>
                     <p>
-The company maintains an all-embracing after-sales support service aimed at retaining customers' vehicles in showroom condition for a very long time. This covers routine servicing, engine repairs, bodywork and supply of genuine spare parts. Our Workshops are equipped to handle all maintenance needs with state-of-the-art equipment to ensure prompt engine analyses and quick repairs. Our engineers are highly trained and experienced with many of them Kodawari-certified and are regularly trained locally and overseas on the latest Toyota technology.</p>
+The company maintains an all-embracing after-sales support service aimed at retaining customers' vehicles in showroom condition for a very long time. This covers routine servicing, engine repairs, bodywork and supply of genuine spare parts. Our Workshops are equipped to handle all maintenance needs with State-of-the-art equipment to ensure prompt engine analysis and quick repairs. Our engineers are highly trained and experienced with many of them Kodawari-certified and are regularly trained locally and overseas on the latest Toyota technology.</p>
                   </div>
 
                   <div class="tab-pane fade" id="vtab3">
@@ -87,9 +87,9 @@ The company maintains an all-embracing after-sales support service aimed at reta
 
                   <p> The company's operations have been fully computerised in line with the demand of the new millennium. </p>
                   <p>
-                  As a means of enhancing the automation process, a lot has been invested in state-of-the-art systems in both high end server and workstations. </p>
+                  As a means of enhancing the automation process, a lot has been invested in State-of-the-art systems in both high end server and workstations. </p>
 
-                  <p>There has been huge investment in training and the use of office automation tools with appropriate business management software. There is an e-mail address through which customer can access the company - elizade@elizade.net. This ensures that inquiries can be received and responses are made within minutes, all in the effort towards prompt</p> delivery of services. </p>
+                  <p>There has been huge investment in training and the use of office automation tools with appropriate business management software. There is an e-mail address through which customer can access the company - elizade@elizade.net. This ensures that inquiries can be received and responses are made within minutes, all in the effort towards prompt delivery of services.</p>
                   </div>
                   <div class="tab-pane fade" id="vtab4">
                     <h3 class="text-center title">Showroom/Depots</h3>
@@ -99,7 +99,7 @@ The company maintains an all-embracing after-sales support service aimed at reta
                   </div>
 
                   <div class="tab-pane fade" id="vtab5">
-                    <h3 class="text-center title">Our Customers</h3>
+                    <h3 class="text-center title">Customer Services</h3>
                      <p>Over the years, the company has established a relationship of trust and confidence with its loyal customers. </p>
                     <p>Once a vehicle is sold, it is backed up with our organisation’s maintenance muscle and experience of over four decades. Whatever model you buy, you can be sure Elizade will always be there to help you achieve pleasant motoring experience all the time. For this, the company has been richly rewarded with customers' loyalty.
                        </p>

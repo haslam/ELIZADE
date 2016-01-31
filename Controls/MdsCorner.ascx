@@ -8,7 +8,19 @@
       </div>
 
       <!-- banner end -->
-
+        <div class="page-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                    <li><i class="fa fa-home pr-10"></i><a href="/p.aspx?p=home">Home</a></li>
+                    <li>About us</li>
+                    <li class="active">From the MD's Desk</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
       <!-- page-intro start-->
       <!-- ================ -->
     
@@ -26,9 +38,9 @@
                         Since inception in 1971 we have always worked hard towards achieving world class standards in providing excellent auto products and after sales service. Elizade Nigeria Limited is currently the leading auto dealer of Toyota vehicles in Nigeria. </p>
                      <p class="mdcorner">Our vision of going beyond our customers’ expectations and improving services in the auto industry is keeping us at the top of the industry.
                         We are able to achieve this by providing high quality and reliable auto brands while also investing in facilities, technology, and well trained technicians that are made available across Nigeria. </p>
-                     <p class="mdcorner">The current changes in Nigeria is leading us to further expand domestically and introduce new products and services in order to cater to our customers’ needs.
+                     <p class="mdcorner">The current changes in Nigeria are leading us to further expand domestically and introduce new products and services in order to cater to our customers’ needs.
                         We will continue to eagerly work at satisfying our customers and strategically compete in the Nigerian auto industry.</p>
-                     <p class="mdcorner">Thank you for your patronage and we look forward to serving you even better..</p>
+                     <p class="mdcorner">Thank you for your patronage and we look forward to serving you even better.</p>
                          <br />
                          <p class="mdcorner">Yours Faithfully <br /><span class="mdsign">Demola Ade-Ojo</span></p>
                        

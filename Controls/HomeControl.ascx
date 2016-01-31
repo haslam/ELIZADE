@@ -252,7 +252,7 @@
 							<div class="col-xs-12 col-sm-4 col-md-4 isotope-item web-design">
 								<div class="box-style-1 white-bg">
 									<h3>Request a Quote</h3>
-									<p>Click here to request a quote from one of our agents</p>
+									<p>Click here to request a quote from one of our Sales Executives</p>
 									<!-- Modal entrance -->
 									<input type="button" class="btn btn-primary" data-toggle="modal" data-target="#quoteModal" value="Request" />
 
