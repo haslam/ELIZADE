@@ -1,0 +1,321 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GalleryMaster.master.cs" Inherits="GalleryMaster" %>
+
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <title>Elizade Toyota Nigeria Limited</title>
+    <meta name="description" content="Elizade Nigeria">
+    <meta name="author" content="Hersens">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+       <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    
+      <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/Toyota/favicon.ico">
+
+    <link href="css/skins/red.css" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Plugins -->
+    <link href="plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet">
+    <link href="plugins/rs-plugin/css/extralayers.css" media="screen" rel="stylesheet">
+    <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+   
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="Server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body class="boxed">
+  
+    <form id="form2" runat="server">
+        <!-- scrollToTop -->
+        <!-- ================ -->
+      
+
+        <!-- page wrapper start -->
+        <!-- ================ -->
+        <div class="page-wrapper">
+
+            <!-- header-top start -->
+            <!-- ================ -->
+             <!-- header-top start -->
+            <!-- ================ -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2  col-sm-4">
+
+                            <!-- header-top-first start -->
+                            <!-- ================
+
+							-->
+                            <!-- header-top-first end -->
+
+                        </div>
+                        <div class="col-xs-10 col-sm-8">
+
+                            <div class="col-xs-7 col-sm-7">
+
+
+                                <div class="header-top-first clearfix" style="float: right;">
+                                    <ul class="social-links light clearfix hidden-xs">
+                                        <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+
+                                        <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+
+                                        <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+
+                                        <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
+
+
+
+                                    </ul>
+                                    <div class="social-links hidden-lg hidden-md hidden-sm">
+                                        <div class="btn-group dropdown">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt"></i></button>
+                                            <ul class="dropdown-menu dropdown-animation">
+                                                <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+
+                                                <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+
+                                                <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+
+                                                <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
+
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- header-top-second start -->
+                            <!-- ================ -->
+                            <div class="col-xs-5 col-sm-5">
+
+                                <div id="header-top-second" class="clearfix">
+
+                                   <!-- header top dropdowns start -->
+									<!-- ================ -->
+									<div class="header-top-dropdown">
+										<div class="btn-group" style="border-right: 1px solid #E3E3E3;">
+											<a href="/p.aspx?p=career" class="btn btn-none kilt">Blog</a>
+
+										</div>
+										
+										<div class="btn-group">
+										<a href="/p.aspx?p=career" class="btn btn-none kilt">Career</a>
+
+										</div>
+
+									</div>
+									<!--  header top dropdowns end -->
+
+                                </div>
+                                <!-- header-top-second end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-top end -->
+
+            <!-- header start (remove fixed class from header in order to disable fixed navigation mode) -->
+            <!-- ================ -->
+            <header class="header fixed clearfix">
+                <div class="container">
+                   <div class="row">
+                        <div class="col-md-3">
+
+                            <!-- header-left start -->
+                            <!-- ================ -->
+                             <div class="header-left clearfix">
+
+                                <!-- logo -->
+                                <div class="logo">
+
+                                    <div class="box_10 no-margin">
+                                       <div class="push_2 push_3" style="margin-top: 5px;" >
+
+											<a href="/p.aspx?p=home">
+												<img id="logo" src="images/Toyota/logo.jpg" alt="ELIZADE NIGERIA LIMITED"></a>
+
+										</div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- header-left end -->
+
+                        </div>
+                       <div class="col-md-9 zeropaddings">
+                        <!-- menu thingz -->
+                               <div class="header-right clearfix">
+
+                                <!-- main-navigation start -->
+                                <!-- ================ -->
+                                <div class="main-navigation animated">
+
+                                    <!-- navbar start -->
+                                    <!-- ================ -->
+                                    <nav class="navbar navbar-default" role="navigation">
+                                        <div class="container-fluid">
+
+                                            <!-- Toggle get grouped for better mobile display -->
+                                            <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                            </div>
+
+                                            <!-- Collect the nav links, forms, and other content for toggling -->
+                                            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                                                <ul class="nav navbar-nav navbar-right">
+
+                                                    <!-- mega-menu start -->
+                                                    <li class="dropdown mega-menu">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">New Cars</a>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li>
+                                                                <asp:PlaceHolder ID="plhMegamenu" runat="server"></asp:PlaceHolder>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- mega-menu end -->
+                                                    <li>
+                                                        <a href="#">Used Cars</a>
+                                                    </li>
+
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Service and Parts</a>
+                                                        <ul class="dropdown-menu" role="menu">
+
+                                                            <li><a href="/p.aspx?p=servicecenters">Our Locations</a></li>
+															<li><a href="/p.aspx?p=book-service">Book a Service</a></li>
+															<li><a href="/p.aspx?p=book-part">Request a part</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">About Us</a>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="/p.aspx?p=our-history">Our History and Ethos</a></li>
+                                                            <li><a href="/p.aspx?p=our-board">The Board</a></li>
+                                                            <li><a href="/p.aspx?p=management-team">Management Team</a></li>
+                                                            <li><a href="/p.aspx?p=awards">Awards</a></li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="/p.aspx?p=contact-us">Contact us</a></li>
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </nav>
+                                    <!-- navbar end -->
+
+
+
+                                </div>
+                                <!-- main-navigation end -->
+
+
+                            </div>
+
+                       <!-- Menu thingz end -->
+
+                       </div>
+
+                       </div>
+                </div>
+            </header>
+            <!-- header end -->
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    <footer id="footer">
+
+               
+
+                <!-- .subfooter start -->
+                <!-- ================ -->
+                <div class="subfooter">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Copyright © 2014 Elizade. All Rights Reserved</p>
+                            </div>
+                            <div class="col-md-6">
+                                <nav class="navbar navbar-default" role="navigation">
+                                    <!-- Toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-2">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="navbar-collapse-2">
+                                        <p class="text-right">Dervac</p>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .subfooter end -->
+
+            </footer>
+
+        </div>
+    </form>
+
+
+  <!-- JavaScript files placed at the end of the document so the pages load faster
+		================================================== -->
+    <!-- Jquery and Bootstap core js files -->
+    <script type="text/javascript" src="plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Modernizr javascript -->
+    <script type="text/javascript" src="plugins/modernizr.js"></script>
+
+   
+
+
+    <!-- Initialization of Plugins -->
+    <script type="text/javascript" src="js/template.js"></script>
+
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

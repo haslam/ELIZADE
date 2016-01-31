@@ -1,0 +1,139 @@
+﻿using ENL.Data;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Controls_UploadCV : BaseControl
+{
+    string action = "";
+    string[] validFileTypes = { "doc", "docx", "pdf" };
+    string Role = "";
+    Hashtable myHospitals = null;
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void BtnCommand_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private bool CheckForSize(FileUpload fuDocrequired)
+    {
+        bool file_ok = false;
+
+        if (fuDocrequired.HasFile)
+        {
+            // Get the size in bytes of the file to upload.
+            int fileSize = fuDocrequired.PostedFile.ContentLength;
+
+            // Allow only files less than 2,100,000 bytes (approximately 1 MB) to be uploaded.
+            if (fileSize < Util.ConfigFilesize)
+            {
+                file_ok = true;
+            }
+        }
+        return file_ok;
+    }
+
+
+    private bool CheckDocRequired(FileUpload fuDocrequired, string[] validFileTypes)
+    {
+        int valid_up = 0;
+        if (1 == 1)
+        {
+            int has_file = 0;
+            if (fuDocrequired.HasFile)
+            {
+                ++has_file;
+                string ext = System.IO.Path.GetExtension(fuDocrequired.PostedFile.FileName);
+                bool isValidFile = false;
+                for (int j = 0; j < validFileTypes.Length; j++)
+                {
+                    if (ext.ToLower() == "." + validFileTypes[j].ToLower())
+                    {
+                        isValidFile = true;
+                        //lblStatus.Text = "Valid";
+                        ++valid_up;
+                        break;
+                    }
+                }
+                if (!isValidFile)
+                {
+                    //lblStatus.Text = "Not Valid";
+                    //lblUP_Error.Text = "Invalid File. Please upload a File with extension " + string.Join(",", validFileTypes);
+                }
+            }
+            else { }
+        }
+        return (valid_up > 0) ? true : false;
+    }
+
+    private void UploadRefundDoc(FileUpload f1, string doc_code)
+    {
+        bool has_value = false;
+        if (f1.HasFile) { has_value = true; }
+        List<Applicant_Docs> list = new List<Applicant_Docs>();
+        if (has_value)
+        {
+            Hashtable fed = new Hashtable();
+            fed.Add("0001", "0001");
+            bool checkDoc = false;
+            if (doc_code == "0001") { checkDoc = CheckDocRequired(f1, validFileTypes); }
+            bool checksize = CheckForSize(f1);
+            if (checkDoc == true && checksize == true)
+            {
+
+                string imagefile = null;
+                string ext = System.IO.Path.GetExtension(f1.PostedFile.FileName);
+                if (f1.HasFile)
+                {
+
+                    if (fed.Contains(doc_code))
+                    {
+                        if ((ext.ToUpper() == ".DOC") || (ext.ToUpper() == ".DOCX") || (ext.ToUpper() == ".PDF"))
+                        {
+                            f1.SaveAs(Page.MapPath("~/CVs/" + imagefile + ext));
+                            string file = Page.MapPath("~/CVs/" + imagefile + ext);
+                            Applicant_Docs doc_file = new Applicant_Docs();             
+                            doc_file.DOC_CODE = doc_code;
+                            doc_file.DOC_FILE_NAME = imagefile + ext;
+                            doc_file.Applicant_ID = int.Parse(Session["UserRecID"].ToString());
+                            list.Add(doc_file);
+                            doc_file = null;
+                        }
+                        else
+                        {
+                            msgBox1.alert("Please CV can not be in other format than .doc or .docx ");
+                            return;
+                        }
+                    }
+                    int result = DataService.Provider.ModifyApplicantDocData(imagefile + ext, doc_code, int.Parse(Session["UserRecID"].ToString()), 1, int.Parse(Session["DBPlace"].ToString()));
+                }
+                else
+                {
+                    imagefile = "no_image.jpg";
+                }
+            }
+            else if (checkDoc == false && checksize == true)
+            {
+                if (doc_code == "0001")
+                {
+                    msgBox1.alert("Kindly select saved Curriculum Vitae in word .doc or .docx or pdf Format, The selected file is invalid!");
+                    return;
+                }
+            }
+            else if (checkDoc == false && checksize == false)
+            {
+                msgBox1.alert("Bad Format and Size, Please select a Valid File!"); return;
+            }
+            else if (checkDoc == true && checksize == false) { msgBox1.alert("File Limit Exceeded!"); return; }
+            else { return; }
+        }
+    }
+}

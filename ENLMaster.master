@@ -1,0 +1,578 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ENLMaster.master.cs" Inherits="ENLMaster" %>
+
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head runat="server">
+    <meta charset="utf-8">
+    <title>Elizade Toyota Nigeria Limited</title>
+    <meta name="description" content="Elizade Nigeria">
+    <meta name="author" content="hersens">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/Toyota/favicon.ico">
+    <link href="plugins/jquery-ui.min.css" rel="stylesheet" />
+
+
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="plugins/lightslider/css/lightslider.css" rel="stylesheet" />
+    <!-- Font Awesome CSS -->
+    <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Fontellos CSS -->
+    <link href="fonts/fontello/css/fontello.css" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link href="plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet">
+    <link href="plugins/rs-plugin/css/extralayers.css" media="screen" rel="stylesheet">
+    <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+     <link href="plugins/jquery.datetimepicker.css" rel="stylesheet">
+    <!-- Eliz core CSS file -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
+    <link href="css/skins/red.css" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link href="css/custom.css" rel="stylesheet">
+    <style>
+        #maps-wrapper {
+            height: 350px;
+            overflow: hidden;
+        }
+
+        #map-locations {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+    <style>
+        .lightslide ul {
+            list-style: none outside none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .demo .item {
+            margin-bottom: 60px;
+        }
+
+        .content-slider li {
+            background-color: #ed3020;
+            text-align: center;
+            color: #FFF;
+        }
+
+        .content-slider h3 {
+            margin: 0;
+            padding: 70px 0;
+        }
+
+        .demo {
+            width: 800px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="Server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<!-- body classes:
+			"boxed": boxed layout mode e.g. <body class="boxed">
+			"pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1">
+	-->
+<body class="pattern-1 boxed">
+    <form id="form1" runat="server">
+        <!-- scrollToTop -->
+        <!-- ================ -->
+        <div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+        <!-- page wrapper start -->
+        <!-- ================ -->
+        <div class="page-wrapper">
+
+            <!-- header-top start -->
+            <!-- ================ -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2  col-sm-4">
+
+                            <!-- header-top-first start -->
+                            <!-- ================
+
+							-->
+                            <!-- header-top-first end -->
+
+                        </div>
+                        <div class="col-xs-10 col-sm-8">
+
+
+
+                            <div class="col-xs-12 col-sm-12">
+
+                                <div class="header-top-second clearfix" style="float: right;">
+                                    <ul class="social-links light clearfix hidden-xs">
+                                        <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+
+                                        <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+
+                                        <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+
+                                        <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
+
+
+
+                                    </ul>
+                                    <div class="social-links hidden-lg hidden-md hidden-sm">
+                                        <div class="btn-group dropdown">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt"></i></button>
+                                            <ul class="dropdown-menu dropdown-animation">
+                                                <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+
+                                                <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+
+                                                <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+
+                                                <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
+
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- header-top-second start -->
+                                <!-- ================ 
+                           
+
+                                <div id="header-top-second" class="clearfix">
+                                    -->
+                                <!-- header top dropdowns start -->
+                                <!-- ================ -->
+                                <div class="header-top-dropdown">
+                                    <div class="btn-group" style="border-right: 1px solid #E3E3E3;">
+                                        <a href="#" class="btn btn-none kilt">Blog</a>
+
+                                    </div>
+
+                                    <div class="btn-group" style="border-right: 1px solid #E3E3E3;">
+                                        <a href="/p.aspx?p=career" class="btn btn-none kilt">Career</a>
+
+                                    </div>
+
+                                </div>
+                                <!--  header top dropdowns end -->
+                                <!-- 
+                                </div>
+                                header-top-second end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-top end -->
+
+            <!-- header start (remove fixed class from header in order to disable fixed navigation mode) -->
+            <!-- ================ -->
+            <header class="header fixed clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+
+                            <!-- header-left start -->
+                            <!-- ================ -->
+                            <div class="header-left clearfix">
+
+                                <!-- logo -->
+                                <div class="logo">
+
+                                    <div class="box_10 no-margin">
+                                        <div class="push_2 push_3">
+
+                                            <a href="/p.aspx?p=home">
+                                                <img id="logo" src="images/Toyota/logo.png" alt="ELIZADE NIGERIA LIMITED"></a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- header-left end -->
+
+                        </div>
+                        <div class="col-md-10 zeropaddings">
+
+                            <!-- header-right start -->
+                            <!-- ================ -->
+                            <div class="header-right clearfix">
+
+                                <!-- main-navigation start -->
+                                <!-- ================ -->
+                                <div class="main-navigation animated">
+
+                                    <!-- navbar start -->
+                                    <!-- ================ -->
+                                    <nav class="navbar navbar-default" role="navigation">
+                                        <div class="container-fluid">
+
+                                            <!-- Toggle get grouped for better mobile display -->
+                                            <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                            </div>
+
+                                            <!-- Collect the nav links, forms, and other content for toggling -->
+                                            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                                                <ul class="nav navbar-nav navbar-right">
+
+                                                    <!-- mega-menu start -->
+                                                    <li class="dropdown mega-menu">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">New Cars</a>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li>
+                                                                <asp:PlaceHolder ID="plhMegamenu" runat="server"></asp:PlaceHolder>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <!-- mega-menu end -->
+                                                    <li>
+                                                        <a href="/p.aspx?p=used-cars">Used Cars</a>
+                                                    </li>
+
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Service and Parts</a>
+                                                        <ul class="dropdown-menu" role="menu">
+
+                                                            <li><a href="/p.aspx?p=servicecenters">Our Locations</a></li>
+                                                            <li><a href="/p.aspx?p=book-service">Book a Service</a></li>
+                                                            <li><a href="/p.aspx?p=book-part">Request a part</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">About Us</a>
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="/p.aspx?p=our-history">Our History and Ethos</a></li>
+                                                            <li><a href="/p.aspx?p=our-board">The Board</a></li>
+                                                            <li><a href="/p.aspx?p=management-team">Management Team</a></li>
+                                                            <li><a href="/p.aspx?p=from-md-desk">From the MD's Desk</a></li>
+                                                            <li><a href="/p.aspx?p=awards">Awards</a></li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="/p.aspx?p=contact-us">Contact us</a></li>
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </nav>
+                                    <!-- navbar end -->
+
+
+
+                                </div>
+                                <!-- main-navigation end -->
+
+
+                            </div>
+                            <!-- header-right end -->
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </header>
+            <!-- header end -->
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer id="footer">
+
+                <!-- .footer start -->
+                <!-- ================ -->
+                <!-- Removed footer -->
+
+                <!-- .footer end -->
+
+                <!-- .subfooter start -->
+                <!-- ================ -->
+
+                <!-- .footer end -->
+
+                <!-- .subfooter start -->
+                <!-- ================ -->
+                <div class="subfooter">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="col-sm-6">
+                                    <p class="foot-note" style="margin-top: 17px;">Copyright © 2015 Elizade Nigeria Limited</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+
+                                            <!-- Nav link starts -->
+                                            <nav class="navbar navbar-default" role="navigation" style="margin-bottom: 7px;">
+                                                <!-- Toggle get grouped for better mobile display -->
+                                                <div class="navbar-header">
+                                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-2">
+                                                        <span class="sr-only">Toggle navigation</span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                    </button>
+                                                </div>
+                                                <div class="collapse navbar-collapse" id="navbar-collapse-2">
+                                                    <ul class="nav navbar-nav">
+                                                        <li><a href="/p.aspx?p=why-elizade">Why Elizade</a></li>
+                                                        <li><a href="/p.aspx?p=sitemap">Sitemap</a></li>
+                                                        <li><a href="/p.aspx?p=faq">FAQ</a></li>
+                                                        <li><a href="/p.aspx?p=privacy-statement">Privacy</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </nav>
+                                            <!-- Nav Links ends -->
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="text-right foot-note" style="padding-right: 20px;">Powered by <a href="http://www.dervac.com" style="color:blue;">Dervac Technologies</a></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- .subfooter end -->
+
+            </footer>
+
+        </div>
+    </form>
+    <!-- JavaScript files placed at the end of the document so the pages load faster
+		================================================== -->
+    <!-- Jquery and Bootstap core js files -->
+    <script type="text/javascript" src="plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Modernizr javascript -->
+    <script type="text/javascript" src="plugins/modernizr.js"></script>
+
+    <!-- jQuery REVOLUTION Slider  -->
+    <script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- Isotope javascript -->
+    <script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Owl carousel javascript -->
+    <script type="text/javascript" src="plugins/owl-carousel/owl.carousel.js"></script>
+
+    <!-- Magnific Popup javascript -->
+    <script type="text/javascript" src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Appear javascript -->
+    <script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+    <!-- Count To javascript -->
+    <script type="text/javascript" src="plugins/jquery.countTo.js"></script>
+
+    <!-- Parallax javascript -->
+    <script src="plugins/jquery.parallax-1.1.3.js"></script>
+
+    <!-- Contact form -->
+    <script src="plugins/jquery.validate.js"></script>
+
+    <!-- Initialization of Plugins -->
+    <script type="text/javascript" src="js/template.js"></script>
+
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Google map -->
+    <script type="text/javascript" src="js/google.map.config.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script type="text/javascript" src="js/google.maps.js"></script>
+    <script src="plugins/jquery-ui.min.js"></script>
+    <script src="plugins/jquery.datetimepicker.js"></script>
+    <script>
+        var to;
+        function cycle() {
+            $('#verti #navt li a').click();
+            to = setInterval(cycle, 800000);
+        }
+        cycle();
+
+
+        //    var index = 0;
+        //    var t = $('#navt');
+        //var tabs = t.tabs('tabs');
+        //setInterval(function(){
+        //t.tabs('select', tabs[index].panel('options').title);
+        //index++;
+        //if (index >= tabs.length){
+        //index = 0;
+        //}
+        //}, 3000);
+    </script>
+
+    <script src="plugins/lightslider/js/lightslider.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#content-slider").lightSlider({
+                loop: true,
+                keyPress: true
+            });
+            $('#image-gallery').lightSlider({
+                gallery: true,
+                item: 1,
+                thumbItem: 9,
+                slideMargin: 0,
+                speed: 500,
+                auto: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#ContentPlaceHolder1_ctl00_ctl00_DropOffDate').datetimepicker();
+            $('#ContentPlaceHolder1_ctl00_ctl00_PickUpDate').datetimepicker();
+        });
+    </script>
+
+    <script type="text/JavaScript">
+        // prepare the form when the DOM is ready 
+        $(document).ready(function () {
+            $("#gallery li img").hover(function () {
+                $('#main-img').attr('src', $(this).attr('src').replace('thumb/', ''));
+            });
+            var imgSwap = [];
+            $("#gallery li img").each(function () {
+                imgUrl = this.src.replace('thumb/', '');
+                imgSwap.push(imgUrl);
+            });
+            $(imgSwap).preload();
+        });
+        $.fn.preload = function () {
+            this.each(function () {
+                $('<img/>')[0].src = this;
+            });
+        }
+</script>
+        <script type="text/JavaScript">
+            // prepare the form when the DOM is ready 
+            $(document).ready(function () {
+                $("#galleryint li img").hover(function () {
+                    $('#main-imgint').attr('src', $(this).attr('src').replace('thumb/', ''));
+                });
+                var imgSwap = [];
+                $("#galleryint li img").each(function () {
+                    imgUrl = this.src.replace('thumb/', '');
+                    imgSwap.push(imgUrl);
+                });
+                $(imgSwap).preload();
+            });
+            $.fn.preload = function () {
+                this.each(function () {
+                    $('<img/>')[0].src = this;
+                });
+            }
+</script>
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+
+        // Grab the tab links and content divs from the page
+        var tabListItems = $('#navt li');
+
+        // loop through all tab li tags
+        $('#tabs li').each(function (i, ele) {
+            // Assign click/focus events to the tab anchor/links
+            var tabLink = $(this).find('a').on('click', showTab).on('focus', function () { $(this).blur(); });
+            var tabBody = $($(tabLink).attr('href'));
+
+            // highlight the first tab
+            if (i == 0) $(tabLink).addClass('selected');
+
+            // hide all the content divs but the first
+            if (i != 0) $(tabBody).hide();
+        });
+
+        //auto-rotate every 4 seconds
+        setInterval(function () {
+            var selectedTab = $('#navt').find('li.active');
+            var index = $(selectedTab).index();
+
+            if (index < $('#navt').find('li').length - 1)
+                index++;
+            else
+                index = 0;
+
+            $('#navt').find('li:eq(' + index + ') a').click();
+        }, 4000);
+
+
+        function showTab(e) {
+            // prevent default anchor/link action
+            e.preventDefault();
+
+            var selectedId = $(this).attr('href');
+
+            // remove 'on' class from all tab li tags
+            $('#navt').find('li').removeClass('active');
+
+            // remove 'selected' class from all tab anchors/links
+            $('#navt').find('a.selected').removeClass('selected');
+
+            // add 'on' class to selected tab li tag
+            $(this).closest('li').addClass('active');
+
+            // add selected class 
+            $(this).addClass('selected');
+
+            // hide all tab bodies
+            $('div.tab-pane').hide();
+
+            // show selected tab body
+            $(selectedId).show();
+        }
+
+    });
+    </script>
+   

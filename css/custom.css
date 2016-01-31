@@ -1,0 +1,53 @@
+/*
+CUSTOM STYLES....Hersens
+*/
+
+.trackdiv
+{
+    margin-top: 110px;
+}
+.trackimg
+{
+    max-width: 160px;
+    width: 90%;
+}
+.midtrack
+{
+   width: 50%;
+   min-height: 120px;
+   margin: 0 auto;
+   background-color: #ddd;
+   border-radius: 5px;
+  
+   padding: 10px 15px;
+   margin-top: 20px;
+   margin-bottom:20px;
+}
+    .midtrack h3
+    {
+       text-transform:uppercase;
+        color: #dc151e;
+    }
+    .midtrack img
+    {
+        max-width: 150px;
+        width: 100%;
+        margin: 0 auto;
+    }
+.midtrack .btn-cstm
+{
+    border-radius: 4px;
+}
+.report-modal-body
+{
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.report-pre {
+    width:100%;
+    overflow-x:auto;
+    word-wrap:normal;
+    margin:1px;
+}
